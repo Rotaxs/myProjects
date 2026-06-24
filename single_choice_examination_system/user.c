@@ -634,7 +634,7 @@ void browse_exam_paper(PaperNode *cur_paper, ExamRecord *cur_record, QuestionNod
     printf(YELLOW BOLD "交卷时间：" RESET);
     // if (date_compare(cur_record->start_time, cur_record->end_time) == 0)
     // printf(RED "未交卷\n" RESET);
-    if (!cur_record->is_finished)
+    if (!cur_paper->published)
         printf(RED "未交卷\n" RESET);
     else
         printf(YELLOW BOLD "%s\n" RESET, cur_record->end_time);

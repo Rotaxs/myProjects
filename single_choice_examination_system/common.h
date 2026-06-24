@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
-// #include <unistd.h>
+#include <unistd.h>
 #include <windows.h>
 #include <stdlib.h>
 
@@ -20,7 +20,7 @@
 // 试卷及系统常量
 #define TITLELEN 100                        // 试卷标题字符串的最大长度
 #define MAX_PAPER_QUESTIONS 50              // 试卷最大题目数
-#define TIMELEN 16                          // 格式如 "2025/12/28 15:00"
+#define TIMELEN 16                          // 格式如 "2025-12-28 15:00"
 #define MAX_PAPER_COUNT 100                 // 本地保存的试卷的最大数量
 #define PAPERDATAPATH "./data/papers.dat"   // 本地保存试卷数据的位置
 #define EXPORTED_PAPER_PATH "./data/papers" // 保存导出的试卷的文件夹
