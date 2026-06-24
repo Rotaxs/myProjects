@@ -1,0 +1,17 @@
+# 排除编译生成的可执行文件
+*.exe
+*.o
+*.out
+
+.vscode/
+*.log
+*.tmp
+
+data/*
+!data/.gitkeep
+papers/*
+!papers/.gitkeep
+
+# 排除操作系统生成的特殊文件
+.DS_Store
+Thumbs.db
